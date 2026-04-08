@@ -18,7 +18,7 @@ class ListViewModel(application: Application) : AndroidViewModel(application) {
     val loadingLD = MutableLiveData<Boolean>()
 
     val TAG = "volleyTag"
-    private var queue: RequestQueue? = null
+    var queue: RequestQueue? = null
 
     fun refresh() {
         loadingLD.value = true
